@@ -1,5 +1,5 @@
 import time
-from threading import Thread
+from threading import Thread, enumerate
 
 
 def countdown(n):
@@ -16,4 +16,5 @@ if __name__ == '__main__':
     t2.start()
 
     if t1.is_alive() and t2.is_alive():
-        pass
+        for thread in enumerate():
+            print(thread.name)
